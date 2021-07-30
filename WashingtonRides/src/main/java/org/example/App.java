@@ -45,18 +45,6 @@ public class App {
                 endStation.setStationID(Integer.parseInt(record.get(7)));
                 endStation.setStationName(record.get(6));
 
-                /*boolean unique = false;
-                for (Stations st : stations) {
-                    if (startStation.getStationID() != st.getStationID() && endStation.getStationID() != st.getStationID()) {
-                        unique = true;
-                    }
-                }
-                if (unique) {
-                    stations.add(startStation);
-                }
-                if (unique) {
-                    stations.add(endStation);
-                }*/
                 boolean start = false;
                 boolean end = false;
                 for (Stations st : stations) {
@@ -79,9 +67,7 @@ public class App {
                         stations.add(startStation);
                     }
                 }
-
             }
-
 
             PreparedStatement statementStations = null;
             Connection con = dbconnection();
