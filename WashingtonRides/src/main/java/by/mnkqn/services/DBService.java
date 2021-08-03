@@ -1,5 +1,7 @@
 package by.mnkqn.services;
 
+import by.mnkqn.App;
+import by.mnkqn.entities.*;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.sql.Connection;
@@ -7,12 +9,10 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.List;
 import java.util.Properties;
-
-import by.mnkqn.App;
-import by.mnkqn.entities.*;
 import com.mysql.cj.jdbc.MysqlDataSource;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
 
 public class DBService {
 
