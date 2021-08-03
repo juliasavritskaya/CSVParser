@@ -1,16 +1,16 @@
-CREATE TABLE Rides
+CREATE TABLE rides
 (
-    RideId VARCHAR(50) PRIMARY KEY,
-    RideableType VARCHAR(100),
-    StartedAt DATETIME,
-    EndedAt DATETIME,
-    StartStationId INT,
-    EndStationId INT,
-    FOREIGN KEY (StartStationId) references Stations (StationId),
-    FOREIGN KEY (EndStationId) references Stations (StationId),
-    MemberCasual VARCHAR(50),
-    StartLat VARCHAR (50),
-    StartLong VARCHAR (50),
-    EndLat VARCHAR (50),
-    EndLong VARCHAR (50)
+    ride_id VARCHAR(50) PRIMARY KEY,
+    rideable_type VARCHAR(100),
+    started_at DATETIME,
+    ended_at DATETIME,
+    start_station_id INT,
+    end_station_id INT,
+    FOREIGN KEY (start_station_id) references stations (station_id),
+    FOREIGN KEY (end_station_id) references Stations (station_id),
+    member_casual VARCHAR(50),
+    start_latitude DECIMAL (25, 22),
+    start_longitude DECIMAL (25, 22),
+    end_longitude DECIMAL (25, 22),
+    end_longitude DECIMAL (25, 22)
 );
