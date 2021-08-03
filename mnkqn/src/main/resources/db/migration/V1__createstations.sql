@@ -1,5 +1,5 @@
-CREATE TABLE Stations
+CREATE TABLE stations
 (
-    StationId INT PRIMARY KEY,
-    StationName VARCHAR(100)
+    station_id INT PRIMARY KEY,
+    station_name VARCHAR(100)
 );
