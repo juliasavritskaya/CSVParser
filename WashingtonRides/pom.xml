@@ -4,13 +4,11 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>org.example</groupId>
+  <groupId>by.mnkqn</groupId>
   <artifactId>CsvFiledata</artifactId>
   <version>1.0-SNAPSHOT</version>
 
-  <name>CsvFiledata</name>
-  <!-- FIXME change it to the project's website -->
-  <url>http://www.example.com</url>
+  <name>WashingtonRides</name>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -37,6 +35,11 @@
       <artifactId>commons-csv</artifactId>
       <version>1.8</version>
     </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-jdk14</artifactId>
+      <version>1.7.31</version>
+    </dependency>
   </dependencies>
 
   <build>
@@ -48,7 +51,7 @@
           <artifactId>flyway-maven-plugin</artifactId>
           <version>7.11.4</version>
             <configuration>
-              <url>jdbc:mysql://127.0.0.1:3306/washrides</url>
+              <url>jdbc:mysql://127.0.0.1:3306/wrides</url>
               <user>root</user>
               <password>mnkqn1354</password>
           </configuration>
