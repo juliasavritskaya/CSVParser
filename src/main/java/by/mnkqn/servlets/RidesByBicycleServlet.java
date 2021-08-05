@@ -1,6 +1,3 @@
-// ADD RIDES ENTITIES TO JSON
-// ADD SELECT * FROM RIDES instead of some fields
-
 package by.mnkqn.servlets;
 
 import by.mnkqn.entities.Rides;
