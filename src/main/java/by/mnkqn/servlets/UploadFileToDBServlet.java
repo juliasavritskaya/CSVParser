@@ -74,7 +74,6 @@ public class UploadFileToDBServlet extends HttpServlet {
             out.print(rideJsonString);
             out.flush();
         }
-
     }
 
     @Override
